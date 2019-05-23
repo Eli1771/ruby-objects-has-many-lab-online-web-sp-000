@@ -7,7 +7,7 @@ class Author
   end 
   
   def add_post(a_post) 
-    a_post.artist = self 
+    a_post.author = self 
     @posts << a_post
   end 
   def add_post_by_name(name) 
