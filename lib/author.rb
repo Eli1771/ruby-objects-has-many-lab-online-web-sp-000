@@ -6,14 +6,14 @@ class Author
     @posts = []
   end 
   
-  def add_post(a_post) 
-    a_post.author = self 
-    @posts << a_post
+  def add_post(post) 
+    post.author = self 
+    @posts << post
   end 
-  def add_post_by_name(name) 
-    a_post = Song.new(name)
-    a_post.artist = self 
-    @posts << a_post  
+  def add_post_by_title(title) 
+    post = Post.new(title)
+    post.author = self 
+    @posts << post  
   end 
   def self.post_count 
     @posts.size
